@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "cp -f index.html /var/jenkins_home/web/"
+                sh "cp -f index.html /var/jenkins_home/webroot/"
             }
         }
     }
