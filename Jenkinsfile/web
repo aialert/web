@@ -12,8 +12,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                input 'please'
-                echo 'Testing..'
+                
+                sh 'curl 120.92.49.209'
             }
         }
         stage('Deploy') {
