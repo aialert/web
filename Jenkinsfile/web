@@ -11,9 +11,8 @@ pipeline {
             }
         }
         stage('Test') {
-            steps {
-                
-                sh 'curl 120.92.49.209'
+            steps { 
+                sh 'curl 120.92.49.209/index.html'
             }
         }
         stage('Deploy') {
